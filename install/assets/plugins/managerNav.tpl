@@ -9,7 +9,7 @@
  * @license 	http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
  * @author      Pathologic (maxx@np.by)
  * @internal	@properties &sortBy=Field;text;menuindex &cycle=Cycle navigation;list;Yes,No;Yes 
- * @internal	@events OnDocFormRender
+ * @internal	@events OnDocFormRender,OnDocFormSave
  * @internal    @installset base
  * @internal    @legacy_names managerNav
  */
