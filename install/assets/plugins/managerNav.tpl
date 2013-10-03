@@ -33,12 +33,7 @@ include MODX_MANAGER_PATH . "includes/secure_mgr_documents.inc.php";
 secureMgrDocument($id);
 
 if ($_POST['syncsite'] == 1) {
-		// empty cache
-		include_once MODX_MANAGER_PATH . "processors/cache_sync.class.processor.php";
-		$sync = new synccache();
-		$sync->setCachepath(MODX_MANAGER_PATH . "../assets/cache/");
-		$sync->setReport(false);
-		$sync->emptyCache();
+		$modx->clearCache();
 	}
 
 $id = substr($_POST['stay'],4);
