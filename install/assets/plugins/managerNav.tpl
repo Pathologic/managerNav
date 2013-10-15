@@ -46,8 +46,8 @@ $parent = $modx->getDocument($id,'parent');
 $parent= $parent['parent'];
 $upTitle = $modx->getDocument($parent,'pagetitle');
 $upTitle = $upTitle['pagetitle'];
-$lang['gotonext'] = 'Ê ñëåäóþùåìó';
-$lang['gotoprev'] = 'Ê ïðåäûäóùåìó';
+$lang['gotonext'] = 'Ðš ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¼Ñƒ';
+$lang['gotoprev'] = 'Ðš Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÐµÐ¼Ñƒ';
 $docs = $modx->getDocumentChildren ($parent, 1, 0, 'id, pagetitle', '', $sortBy, 'ASC', '');
 foreach ($docs as $key=>$doc) {
 	if ($doc['id'] == $id) $curKey = $key;
