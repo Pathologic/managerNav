@@ -110,5 +110,5 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <!-- /managerNav -->
 OUT;
-    $e->output($output);
+    $modx->event->addOutput($output);
 }
